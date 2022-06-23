@@ -12,7 +12,7 @@ import javax.security.auth.login.LoginException;
 
 public class Main {
     public static void main(String[] args) throws LoginException, InterruptedException {
-        JDA bot = JDABuilder.createDefault("OTg5Mzk4OTkzODgyNzQyODE2.G2KnxL.EWLElYM4XwYF9bVwAie-zYZYnZ1nwdz2Py9r9o")
+        JDA bot = JDABuilder.createDefault(token)
                 .setActivity(Activity.watching("You"))
                 .addEventListeners(new ReplyCommands())
                 .addEventListeners(new SlashCommands())
